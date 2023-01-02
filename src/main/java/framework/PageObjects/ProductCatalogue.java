@@ -18,7 +18,6 @@ this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-
     @FindBy(css = ".mb-3")
     List<WebElement> products;
 

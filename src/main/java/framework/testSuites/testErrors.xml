@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+    <test name="Place The Order">
+        <classes>
+            <class name="Tests.ErrorValidation"/>
+        </classes>
+    </test>
+    <test name="Error Validation">
+        <classes>
+            <class name="Tests.PlaceTheOrder"/>
+        </classes>
+    </test>
+</suite>

@@ -34,7 +34,7 @@ public class BaseTest {
         return driver;
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public LandingPage launchApp() throws IOException {
         driver = initializeDriver();
         landingPage = new LandingPage(driver);
@@ -42,7 +42,7 @@ public class BaseTest {
         return landingPage;
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void quitApp() throws InterruptedException {
         Thread.sleep(2000);
         driver.quit();
